@@ -4,6 +4,7 @@ import LoginForm from "./component/LoginForm";
 import Homepage from "./pages/Homepage";
 import Products from "./component/Products";
 import PrivateContext from "./contexts/PrivateContext";
+import ShowProduct from "./component/ShowProduct";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<LoginForm />} />
           
           <Route path="/products" element={<PrivateContext><Products /></PrivateContext> } />
+          <Route path="/all-products" element={<PrivateContext> <ShowProduct /></PrivateContext>} />
 
         </Routes>
       </BrowserRouter>

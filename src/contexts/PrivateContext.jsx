@@ -35,6 +35,7 @@ export default function PrivateContext({ children }) {
 
         if (decodedToken.exp < currentTime) {
           alert(`Your token expired , Please login again`);
+          navigate("/login")
           return;
         }
       }
@@ -53,7 +54,7 @@ export default function PrivateContext({ children }) {
     };
   }, []);
 
-  return <Private.Provider>{children}</Private.Provider>;
+  return <Private.Provider value={{}}>{children}</Private.Provider>;
 }
 
 export function usePrivateContext() {

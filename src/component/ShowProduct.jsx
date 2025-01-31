@@ -11,7 +11,7 @@ function ShowProduct() {
   const getProducts = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:8080/api/product`, {
+      const res = await fetch(`https://fullstack-backend-assign.onrender.com/api/product`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });

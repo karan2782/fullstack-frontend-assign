@@ -32,7 +32,7 @@ function SignupForm() {
     console.log(formData);
 
     try {
-      const user = await fetch(`http://localhost:8080/api/auth/signup`, {
+      const user = await fetch(`https://fullstack-backend-assign.onrender.com/api/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

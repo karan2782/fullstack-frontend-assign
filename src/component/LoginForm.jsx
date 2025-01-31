@@ -14,7 +14,7 @@ function LoginForm() {
     console.log("email", "password", email, password);
 
     try {
-      const res = await fetch(`http://localhost:8080/api/auth/login`, {
+      const res = await fetch(`https://fullstack-backend-assign.onrender.com/api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

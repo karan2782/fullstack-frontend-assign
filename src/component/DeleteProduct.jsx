@@ -7,7 +7,7 @@ function DeleteProduct({productId, getProducts}) {
     const onDelete = async() =>{
         try {
             const token = localStorage.getItem("token")
-            const res = await fetch(`http://localhost:8080/api/product/${productId}`, {
+            const res = await fetch(`https://fullstack-backend-assign.onrender.com/api/product/${productId}`, {
                 method:"DELETE",
                 headers:{
                     "Authorization":`Bearer ${token}`

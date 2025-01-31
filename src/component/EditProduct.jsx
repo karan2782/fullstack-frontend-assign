@@ -25,7 +25,7 @@ function EditProduct({ product, setUpdateId, getProducts }) {
    
       const token = localStorage.getItem("token");
       const res = await fetch(
-        `http://localhost:8080/api/product/${product._id}`,
+        `https://fullstack-backend-assign.onrender.com/api/product/${product._id}`,
         {
           method: "PATCH",
           headers: {

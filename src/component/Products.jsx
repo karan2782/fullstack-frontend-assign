@@ -83,7 +83,7 @@ function Products() {
                       <HiUpload />
                     </Button>
                   </FileUploadTrigger>
-                  <input type="file" onChange={(e)=>setImage(e.target.files[0])} />
+                  <input type="file" accept="image/*" onChange={(e)=>setImage(e.target.files[0])} />
                 </FileUploadRoot>
                 </Field>
             
